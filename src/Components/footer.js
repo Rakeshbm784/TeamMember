@@ -1,25 +1,18 @@
 // FixedIcon.js
 import React from "react";
-import { Overlay, Tooltip } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
 
 const FixedIcon = () => {
   return (
     <>
-      <Overlay target={document.body} placement="left">
-        {(props) => (
-          <Tooltip id="fixed-icon-tooltip" {...props}>
-            Settings
-          </Tooltip>
-        )}
-      </Overlay>
       <div
         style={{
           position: "fixed",
           bottom: "20px",
           right: "20px",
           cursor: "pointer",
+          paddingRight: "30px",
         }}
       >
         <FontAwesomeIcon
