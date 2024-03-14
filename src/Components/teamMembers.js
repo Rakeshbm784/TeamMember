@@ -32,7 +32,10 @@ function TeamMembers() {
         <Row xs={1} md={4} className="g-4">
           {filterMembersByRole("admin").map((admin, idx) => (
             <Col key={idx}>
-              <Card style={{ width: "18rem" }} className="shadow mt-3">
+              <Card
+                style={{ width: "18rem", borderRadius: 15 }}
+                className="shadow mt-3"
+              >
                 <div className="d-flex">
                   <Card.Img
                     className="mt-2 ms-2 rounded-circle "
@@ -68,7 +71,10 @@ function TeamMembers() {
         <Row xs={1} md={4} className="g-4">
           {filterMembersByRole("member").map((member, idx) => (
             <Col key={idx}>
-              <Card style={{ width: "18rem" }} className="shadow mt-3">
+              <Card
+                style={{ width: "18rem", borderRadius: 15 }}
+                className="shadow mt-3"
+              >
                 <div className="d-flex">
                   <Card.Img
                     className="mt-2 ms-2 rounded-circle "
